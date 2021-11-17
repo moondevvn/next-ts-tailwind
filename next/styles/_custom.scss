@@ -1,0 +1,16 @@
+// Custom project-specific class here
+:root {
+    --color-primary-light: #fffcf0;
+    --color-primary: #ffd025;
+    --color-primary-dark: #f4c42c;
+    --color-accent-light: #eee;
+    --color-accent: #333;
+    --color-accent-dark: #222;
+}
+
+.bg-gradient {
+    @apply bg-gradient-to-r from-accent to-primary hover:from-accent hover:to-primary-dark;
+    &:not(.loading)[disabled] {
+        background-image: none !important;
+    }
+}

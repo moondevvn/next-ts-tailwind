@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @import './base';
+}
+
+@layer components {
+    @import './buttons';
+    @import './form';
+    @import './dialog';
+}
+
+@layer utilities {
+    @import './utilities';
+}
+
+@import './custom';
+@import './content';
